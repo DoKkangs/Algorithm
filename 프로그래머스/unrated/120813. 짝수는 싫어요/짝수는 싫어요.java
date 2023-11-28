@@ -2,14 +2,12 @@ import java.util.*;
 
 class Solution {
     public int[] solution(int n) {
-        int size = (n % 2 == 0) ? n/2 : n/2+1;
-        int[] answer = new int[size];
-        int idx = 0;
-        for(int i = 1 ; i <= n ; i++){
-            if(i % 2 != 0){
-                answer[idx++] = i;
-            }
+        int[] answer = {};
+        ArrayList<Integer> temp = new ArrayList<Integer>();
+        for(int i = 1; i <= n ; i+=2){
+            temp.add(i);
         }
+        answer = temp.stream().mapToInt(i->i).toArray();
         return answer;
     }
 }
