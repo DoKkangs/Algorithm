@@ -2,16 +2,13 @@ import java.util.*;
 
 class Solution {
     public int[] solution(long n) {
-        String a = "" + n;
+    String a = "" + n;
     int[] answer = new int[a.length()];
 
     int cnt=0;
-
     while(n > 0) {
-        answer[cnt]=(int)(n%10);
-        n/=10;
-        System.out.println(n);
-        cnt++;
+        answer[cnt++] = (int)(n % 10);
+        n /= 10;
     }
     
     return answer;
