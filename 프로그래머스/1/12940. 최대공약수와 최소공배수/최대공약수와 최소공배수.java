@@ -11,7 +11,7 @@ class Solution {
     public static int GCD(int a,int b){
         int result = 0;
         while(a % b != 0){
-            result = a%b;
+            result = a % b;
             a = b;
             b = result;
         }
