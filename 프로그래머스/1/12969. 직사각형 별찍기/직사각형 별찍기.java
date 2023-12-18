@@ -5,6 +5,10 @@ class Solution {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
+        
+        printStar(a,b);
+    }
+    public static void printStar(int a, int b){
         for (int i = 0; i < b; i++) {
             for (int j = 0; j < a; j++) {
                 System.out.print("*");
