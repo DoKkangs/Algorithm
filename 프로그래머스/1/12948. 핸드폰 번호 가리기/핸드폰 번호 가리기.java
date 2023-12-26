@@ -5,7 +5,7 @@ class Solution {
         for (int i = 0; i < phone_number.length()-4; i++) {
             ps[i] = '*';
         }
-        answer = String.copyValueOf(ps);
+        answer = String.valueOf(ps);
         return answer;
     }
 }
