@@ -4,9 +4,9 @@ class Solution {
     public int[] solution(int[] arr) {
         ArrayList<Integer> list = new ArrayList<>();
         int min = Arrays.stream(arr).min().getAsInt();
-        for (int i : arr) {
-            if(i != min){
-                list.add(i);
+        for (int num : arr) {
+            if(num != min){
+                list.add(num);
             } else if (arr.length == 1) {
                 list.add(-1);
             }
