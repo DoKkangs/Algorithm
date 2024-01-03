@@ -6,9 +6,8 @@ class Solution {
             sb.append(n % 3);
             n /= 3;
         }
-        int length = sb.length();
-        for (int i = 0; i < length; i++) {
-            answer += (sb.charAt(i)-'0')*(int)(Math.pow(3,length-1-i));
+        for (int i = 0; i < sb.length(); i++) {
+            answer += (sb.charAt(i)-'0')*(int)(Math.pow(3,sb.length()-1-i));
         }
         return answer;
     }
