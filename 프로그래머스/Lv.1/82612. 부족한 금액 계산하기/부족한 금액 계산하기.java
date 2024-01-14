@@ -7,9 +7,6 @@ class Solution {
         }
         answer = 0;
         if(!(money >= total)) answer = total - money;
-        
-        
-        
         return answer;
     }
 }
