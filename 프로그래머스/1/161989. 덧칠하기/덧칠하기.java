@@ -19,7 +19,6 @@ class Solution {
                 end = i + (m-1);
                 ans++;
             }
-            
         }
         return ans;
     }
