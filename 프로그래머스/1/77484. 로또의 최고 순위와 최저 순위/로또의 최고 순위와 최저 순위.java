@@ -19,6 +19,7 @@ class Solution {
                 }
             }
         }
+        
         // 순위에 따른 등수로 변환
         answer[0] = rank[answer[0]];
         answer[1] = rank[answer[1]];
